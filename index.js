@@ -33,6 +33,4 @@ async function findContinuesNumbers(nums_array) {
   return response.join(',');
 };
 
-console.log(findContinuesNumbers([1,2]));
-
 module.exports = findContinuesNumbers;
