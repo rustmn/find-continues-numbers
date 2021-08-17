@@ -1,3 +1,4 @@
+const assert = require('assert');
 const findContinuesNumbers = require('./index');
 
 const tests = [
@@ -52,8 +53,10 @@ const tests = [
 ];
 
 describe('findContinuesNumbers testing with test cases defined in technical task', () => {
-  it.each(tests)('$input -> $output', async ({ input, output }) => {
-    const exec = await findContinuesNumbers(input);
-    expect(exec).toBe(output);
+  tests.forEach(({ input, output }) => {
+    it(`${input} -> ${output}`, async () => {
+      const exec = await findContinuesNumbers(input);
+      assert.strictEqual(exec, output);
+    });
   });
 });
