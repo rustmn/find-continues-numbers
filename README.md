@@ -1,4 +1,4 @@
-#This is an implementation of test task from TechTrend company.
+# This is an implementation of test task from TechTrend company.
 
 Задание    
 Написать модуль для Node.JS, который преобразует массив чисел в строку по примеру:  
