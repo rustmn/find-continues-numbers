@@ -24,15 +24,15 @@ const tests = [
   },
   {
     input: [1,2],
-    output: '1-2'
+    output: '1,2'
   },
   {
     input: [1,2,4],
-    output: '1-2,4'
+    output: '1,2,4'
   },
   {
     input: [1,2,4,5,6],
-    output: '1-2,4-6'
+    output: '1,2,4-6'
   },
   {
     input: [1,2,3,7,8,9,15,17,19,20,21],

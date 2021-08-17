@@ -25,9 +25,14 @@ async function findContinuesNumbers(nums_array) {
     if (element[0] === element[1]) {
       return element[0];
     }
+    if (element[1] - element[0] <= 1) {
+      return element.join(',');
+    }
     return element.join('-');
   })
   return response.join(',');
 };
+
+console.log(findContinuesNumbers([1,2]));
 
 module.exports = findContinuesNumbers;
