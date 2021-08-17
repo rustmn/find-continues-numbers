@@ -1,5 +1,11 @@
 # This is an implementation of test task from TechTrend company.
 
+## Installation
+
+```bash
+npm install find-continues-numbers
+```
+
 Задание    
 Написать модуль для Node.JS, который преобразует массив чисел в строку по примеру:  
 [1,2,3,4,5,6,7,8] -> "1-8"  
